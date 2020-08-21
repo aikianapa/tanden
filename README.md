@@ -1,2 +1,1 @@
-# wbshop
 # tanden

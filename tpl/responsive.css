@@ -1,0 +1,159 @@
+@media only screen and (max-width: 1200px) {
+    #logo {
+        width: 100%;
+    }
+    #logo > h4 {
+        text-align: center;
+    }
+    #navigation {
+        width: 100%;
+        text-align: center;
+    }
+    #navigation ul {
+        float: none;
+        text-align: center;
+        display: inline-block;
+    }
+    #header {
+        padding-bottom: 15px;
+    }
+}
+@media only screen and (max-width: 990px) {
+    #pricing .pricing-box {
+        margin-bottom: 15px;
+    }
+    #navigation ul {
+        display: none;
+    }
+    .slicknav_menu {
+        display: block;
+    }
+    #logo {
+        position: absolute;
+    }
+    #logo > h4 {
+        font-size: 48px;
+        text-align: left;
+    }
+
+    #banner .banner-img {
+        max-width: 200px;
+    }
+		
+	#service #service-content .tab-content{
+		margin-left:0px;
+	}
+	
+	#service .serviceBox:last-child {
+		margin-bottom: 0px;
+	}
+	
+	#contact-form .btn-order{
+		display: block;
+		text-align: center;
+	}
+	#contact #contact-info{
+		text-align:center;
+		margin-top:56px;
+	}
+	
+	#main #content .pagination {
+		margin-bottom:56px;
+	}
+	
+	#sidebar{
+	   margin-top:56px;	
+	}
+	
+	#service .serviceBox{
+        margin-bottom: 30px;
+    }
+    #service .serviceBox .service-head > h4{
+        font-size: 26px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .banner-color .banner-heading {
+        font-size: 48px;
+    }
+    .banner-color .banner-content {
+        font-size: 16px;
+    }
+	
+	#service #service-content {
+		padding:56px 20px;
+	}
+}
+@media only screen and (max-width: 468px) {
+    #banner .banner-heading {
+        font-size: 48px;
+    }
+    #banner .banner-content {
+        font-size: 16px;
+    }
+	
+	.heading{
+	   margin-left:0px;	
+	}
+	
+	.heading > h1 {
+	   padding: 10px 30px 10px 30px;
+       height: auto;
+       margin: 0;
+       font-size: 24px;
+       line-height: 32px;
+    }
+	.heading > h1:after {
+		border-top: 0px;
+		border-right: 0px;
+    }
+	
+	.heading > h1:before {
+       border-bottom: 0px;
+       border-left: 0px;
+    }
+	
+	.heading-inverse > h1 {
+	   padding: 0px;
+       height: auto;
+       margin: 0;
+       font-size: 24px;
+       line-height: 0px;
+    }
+	
+	#about .about-content {
+		padding:56px 24px;
+	}
+	
+}
+
+@media only screen and (max-width: 320px) {
+    #banner .banner-heading {
+        font-size: 30px;
+    }
+    #banner .banner-content {
+        font-size: 14px;
+		padding: 10px 15px;
+		line-height:28px;
+    }
+	
+	#banner .banner-btn {
+		padding: 10px 20px;
+		font-size: 18px;
+    }
+	
+}
+
+
+/* media Query for Service Section*/
+
+@media screen and (max-width: 767px){
+    #service .serviceBox:before{
+        left:47%;
+    }
+}
+@media screen and (max-width: 480px){
+    #service .serviceBox:before{
+        left:44%;
+    }
+}
