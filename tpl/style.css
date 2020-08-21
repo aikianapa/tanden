@@ -327,7 +327,7 @@ a:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100%;
+    height: calc(100vh - 70px);
     overflow: hidden;
     text-align: left;
     position: relative;
@@ -422,7 +422,7 @@ a:hover {
 *****************************/
 #slider-content {
     position: relative;
-    height: 100%;
+    height: calc(100vh - 70px);
 }
 #slider-content .sliding-content{
 	max-width:1140px;

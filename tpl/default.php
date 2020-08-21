@@ -5,9 +5,9 @@
 <wb-jq wb-html="main">
     <!--Banner Section-->
 				<div id="home" ></div>
-        <div id="banner" style="background-image:url({{images.0.img}})">
-            <div id="slider-content" wb-tree="field=prop&branch=slideshow&parent=false">
-                <div class="owl-carousel owl-theme" id="content-slider">
+        <div id="banner" class="static-header register-version light clearfix player" data-property="{videoURL:'https://youtu.be/_km09uO6Av8',containment:'#banner',autoPlay:true, mute:true, loop:true, startAt:0, showControls:false, opacity:1}">
+            <div id="slider-content">
+                <div class="owl-carousel owl-theme" id="content-slider"  wb-tree="field=prop&branch=slideshow&parent=false">
                     <div class="sliding-content">
                         <h1 class="banner-heading animated fadeInUp">
                             <span class="first">АЙКИДО</span><span>АЙКИКАЙ</span>
@@ -186,7 +186,7 @@
         <div class="heading heading-inverse">
             <h1>Умные <span>слова</span></h1>
         </div>
-				
+
         <div class="container">
             <div class="row">
                 <div class="owl-carousel owl-theme" id="client-carousel">

@@ -5,11 +5,11 @@ var siteinit = function() {
 	var w = $(window);
 	var banner = $("#banner");
 
-	$(banner).height($(window).height() - 70);
+/*	$(banner).height($(window).height() - 70);
 	$(w).on('resize', function() {
 		$(banner).height($(window).height() - 70);
 	});
-
+*/
 
 	$('body').scrollspy({
 		target: '#navigation',
@@ -213,7 +213,7 @@ var siteinit = function() {
 		responsiveClass: true,
 		autoplay: true,
 		margin: 10,
-		dots: false,
+		dots: true,
 		nav: true,
 		onChanged: function() {
 				wbapp.lazyload();
@@ -256,7 +256,7 @@ var siteinit = function() {
 	})
 
 	/* Preloader */
-
+//	$("#banner").YTPlayer();
 	$("#preloader").fadeOut(500);
 
 }
