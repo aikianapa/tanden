@@ -193,7 +193,7 @@
                     <div class="col-md-10 col-md-offset-1 single-item">
                         <p>{{data.text}}</p>
                         <div class="client">
-                            <img data-wb-size="120;120;src" data-src="/thumbc/120x120/src/uploads/pages/home/{{data.image[0].img}}" alt="">
+                            <img data-wb-size="120;120;src" data-src="/thumbc/120x120/src/{{data.image.0.img}}" alt="">
                             <p>{{name}}</p>
                         </div>
                     </div>
