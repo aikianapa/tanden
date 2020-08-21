@@ -5,7 +5,7 @@
 <wb-jq wb-html="main">
     <!--Banner Section-->
 				<div id="home" ></div>
-        <div id="banner" style="background-image:url({{images.0.img}})">
+        <div id="banner" style="background-image:url({{images.0.img}});background-position: 50% 70px;">
             <div id="slider-content">
                 <div class="owl-carousel owl-theme" id="content-slider"  wb-tree="field=prop&branch=slideshow&parent=false">
                     <div class="sliding-content">
