@@ -59,7 +59,7 @@
 		        </div>
 		        <div class="container">
 		            <div class="row">
-									 <wb-foreach wb="{'table':'news','limit':'3','sort':'date:d'}">
+									 <wb-foreach wb="{'table':'news','limit':'3','sort':'date:d'}" wb-filter="{'active':'on','type':'news'}">
 										 		<wb-var link="/news/{{id}}/{{wbFurlGenerate({{header}})}}" />
 				                <div class="col-md-4 blog-item">
 				                    <a class="image-link" href="{{_var.link}}">
