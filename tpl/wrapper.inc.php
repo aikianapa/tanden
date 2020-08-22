@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="Cache-Control" content="max-age=31536000, must-revalidate" />
 		<link rel="stylesheet" href="{{_var.base}}/css/preloader.css">
-    <title>{{title}}</title>
+    <title>{{header}}</title>
     <!-- jQuery -->
 		<wb-snippet name="wbapp" />
 		<wb-snippet name="fontawesome4" />
@@ -13,7 +13,7 @@
 
 <body>
 
-    <div id="preloader">
+    <!--div id="preloader">
         <div class="preloader">
             <span></span>
             <span></span>
@@ -21,7 +21,7 @@
             <span></span>
             <span></span>
         </div>
-    </div>
+    </div-->
 
     <!--Start Header-->
     <header id="header">
