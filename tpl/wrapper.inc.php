@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="Cache-Control" content="max-age=31536000, must-revalidate" />
+		<meta name="Description" content="{{header}}">
 		<link rel="stylesheet" href="{{_var.base}}/css/preloader.css">
+		<link rel="canonical" href="{{_route.host}}{{_route.uri}}" />
     <title>{{header}}</title>
     <!-- jQuery -->
 		<wb-snippet name="wbapp" />
@@ -30,7 +32,7 @@
                 <div class="col-md-4" id="logo">
                     <h4>
 											<a href="/">
-											<img data-src="{{_sett.logo.0.img}}" style="width:40px;margin-right:8px;" />
+											<img data-src="{{_sett.logo.0.img}}" style="width:40px;margin-right:8px;" alt="{{header}}" />
 											Клуб <span>Тандэн</span>
 											</a>
 										</h4>
@@ -56,11 +58,11 @@
     <div id="footer">
         <p>Разработано в <a href="http://digiport.ru" target="_blank" rel="nofollow">WebBasic CMS Pandemic edition </a> &copy; 2020</p>
         <p class="social">
-            <a wb-if='"{{_sett.vk}}" > ""' href="{{_sett.vk}}" target="_blank">
+            <a rel="noreferrer" wb-if='"{{_sett.vk}}" > ""' href="{{_sett.vk}}" target="_blank">
                 <i class="fa fa-vk" aria-hidden="true"></i></a>
-            <a wb-if='"{{_sett.fb}}" > ""' href="{{_sett.fb}}" target="_blank">
+            <a rel="noreferrer" wb-if='"{{_sett.fb}}" > ""' href="{{_sett.fb}}" target="_blank">
                 <i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a wb-if='"{{_sett.insta}}" > ""' href="{{_sett.insta}}" target="_blank">
+            <a rel="noreferrer" wb-if='"{{_sett.insta}}" > ""' href="{{_sett.insta}}" target="_blank">
                 <i class="fa fa-instagram" aria-hidden="true"></i></a>
         </p>
     </div>

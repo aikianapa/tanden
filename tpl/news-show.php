@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 <wb-include wb-tpl="wrapper.inc.php" />
 
 <wb-jq wb-html="main">
