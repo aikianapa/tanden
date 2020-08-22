@@ -15,25 +15,17 @@
 		 <div class="row">
 				<section class="col-md-8" id="content">
 						<div class="blog-item">
-							 <a href="single-blog.html"><img src="/thumbc/750x500/src/{{images.0.img}}" alt=""></a>
-								 <a href="single-blog.html">
+							 <img src="/thumbc/750x500/src/{{images.0.img}}" alt="{{header}}" class="img-responsive">
+
 								 <h2>{{header}}</h2>
-								 </a>
 								 <p class="posted">Опубликовано {{date}} | Автор <a href="single-blog.html">{{wbCorrelation("users",{{_creator}},"name")}}</a></p>
-								 <a href="single-blog.html" class="share-btn fb">
-									 <i class="fa fa-facebook" aria-hidden="true"></i>
-								 </a>
-								 <a href="single-blog.html" class="share-btn twitter">
-									 <i class="fa fa-twitter" aria-hidden="true"></i>
-								 </a>
-								 <a href="single-blog.html" class="share-btn gplus">
-									 <i class="fa fa-google-plus" aria-hidden="true"></i>
-								 </a>
-								 <a href="single-blog.html" class="share-btn linkedin">
-									 <i class="fa fa-linkedin" aria-hidden="true"></i>
-								 </a>
-
-
+								 <script type="wbapp">
+								 		wbapp.loadScripts([
+											"https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js",
+											"https://yastatic.net/share2/share.js"
+										])
+								 </script>
+								 <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,twitter,whatsapp,telegram"></div>
 								 {{text}}
 						</div>
 
@@ -51,7 +43,7 @@
 									 <li>
 										<a href="/news/{{id}}/{{wbFurlGenerate({{header}})}}">
 											{{wbGetWords({{header}},10)}}<br />
-											<small>{{wbGetWords({{text}},20)}}</small>
+											<small class="hidden-xs">{{wbGetWords({{text}},20)}}</small>
 										</a>
 										<span class="posted">Опубликовано {{date}}</span>
 									 </li>
@@ -67,7 +59,7 @@
 									 <li>
 										<a href="/articles/{{id}}/{{wbFurlGenerate({{header}})}}">
 											{{wbGetWords({{header}},10)}}<br />
-											<small>{{wbGetWords({{text}},20)}}</small>
+											<small class="hidden-xs">{{wbGetWords({{text}},20)}}</small>
 										</a>
 										<span class="posted">Опубликовано {{date}}</span>
 									 </li>
