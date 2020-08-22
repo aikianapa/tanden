@@ -5,7 +5,7 @@
 <wb-jq wb-html="main">
     <!--Banner Section-->
 				<div id="home" ></div>
-        <div id="banner" style="background-image:url({{images.0.img}});background-position: 50% 70px;">
+        <div id="banner" data-src="/thumb/1920x1080/src{{images.0.img}}">
             <div id="slider-content">
                 <div class="owl-carousel owl-theme" id="content-slider"  wb-tree="field=prop&branch=slideshow&parent=false">
                     <div class="sliding-content">
@@ -38,7 +38,7 @@
             </div>
 
             <div class="row about-container">
-                <div class="col-md-5 about-image" style="background-image: url({{images.0.img}});"></div>
+                <div class="col-md-5 about-image" data-src="/thumb/800x600/src{{images.0.img}}"></div>
                 <div class="col-md-7 col-md-offset-5">
                     <div class="about-content">
                         {{text}}

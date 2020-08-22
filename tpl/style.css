@@ -320,8 +320,11 @@ a:hover {
         Banner Section
 ****************************/
 #banner {
-    background-image: url(images/banner.jpg);
-    background-position: center top;
+    /*
+		background-image: url(images/banner.jpg);
+		background-position: center top;
+		*/
+		background-position: 50% 70px;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -551,7 +554,7 @@ a:hover {
     position: relative;
 }
 #about .about-image {
-    background-image: url(images/about.png);
+    /*background-image: url(images/about.png);*/
     background-position: center top;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
