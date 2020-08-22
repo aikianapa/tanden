@@ -330,7 +330,7 @@
     <!--End Contact Section-->
 
     <!--Start Google Map-->
-		<wb-include wb-tpl="widget.map.inc.php" />
+		<!--wb-include wb-tpl="widget.map.inc.php" /-->
     <!--End Google Map-->
 </wb-jq>
 </html>
