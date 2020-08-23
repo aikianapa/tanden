@@ -12,16 +12,13 @@
                         <h1 class="banner-heading animated fadeInUp">
                             <span class="first">АЙКИДО</span><span>АЙКИКАЙ</span>
                         </h1>
-                        <h3 class="banner-content animated slideInRight">
+                        <h2 class="banner-content animated slideInRight">
                             {{name}}
-                        </h3>
-                        <p>
-
-                        </p>
+                        </h2>
                         <br>
-                        <p class="banner-btn animated bounceIn">
+                        <h3 class="banner-btn animated bounceIn">
                             {{data.text}}
-                        </p>
+                        </h3>
                     </div>
                 </div>
             </div>
