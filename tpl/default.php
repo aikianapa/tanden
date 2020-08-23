@@ -60,15 +60,7 @@
 		        <div class="container">
 		            <div class="row">
 									 <wb-foreach wb="{'table':'news','limit':'3','sort':'date:d'}" wb-filter="{'active':'on','type':'news'}">
-										 		<wb-var link="/news/{{id}}/{{wbFurlGenerate({{header}})}}" />
-				                <div class="col-md-4 blog-item">
-				                    <a class="image-link" href="{{_var.link}}">
-				                        <img data-src="/thumbc/360x240/src/{{images.0.img}}" alt="{{header}}">
-				                    </a>
-				                    <h2>{{header}}</h2>
-				                    <p>{{wbGetWords({{text}},20)}}</p>
-				                    <a class="read-more" href="{{_var.link}}">Подробно</a>
-				                </div>
+				                <wb-include wb-tpl="news.item.inc.php" />
 										</wb-foreach>
 		            </div>
 		            <div class="clear"></div>

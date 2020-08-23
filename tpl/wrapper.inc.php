@@ -56,7 +56,7 @@
     </main>
 
     <div id="footer">
-        <p>Разработано в <a href="http://digiport.ru" target="_blank" rel="nofollow">WebBasic CMS Pandemic edition </a> &copy; 2020</p>
+        <p>Разработано в <a href="http://digiport.ru" target="_blank" rel="noreferrer">WebBasic CMS Pandemic edition </a> &copy; 2020</p>
         <p class="social">
             <a rel="noreferrer" wb-if='"{{_sett.vk}}" > ""' href="{{_sett.vk}}" target="_blank">
                 <i class="fa fa-vk" aria-hidden="true"></i></a>
