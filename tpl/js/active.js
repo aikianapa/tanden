@@ -259,4 +259,11 @@ var siteinit = function() {
 //	$("#banner").YTPlayer();
 	$("#preloader").fadeOut(500);
 
+	$(document).on('ajax-done',function(ev,res){
+		if (res._params && res._tid == '#blog') {
+			$('html , body').stop().animate({
+				scrollTop: $('#blog-header').offset().top
+			}, 300);
+		}
+	})
 }

@@ -13,7 +13,7 @@
 
 	<div class="container">
 		 <div class="row" id="blog">
-			 	<wb-foreach wb="table=news&type=news&sort=date:d&size=6&render=server">
+			 	<wb-foreach wb="table=news&sort=date:d&size=6" wb-filter="{'active':'on','type':'news'}">
 					<wb-var link="/news/{{id}}/{{wbFurlGenerate({{header}})}}" />
 			 		<wb-include wb-tpl="news.item.inc.php" />
 				</wb-foreach>
