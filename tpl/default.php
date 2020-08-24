@@ -79,8 +79,8 @@
                     <div class="col-md-12 team-member" wb-if='"{{active}}"=="on"'>
                         <img data-src="/thumbc/270x350/src/{{data.image.0.img}}" alt="{{name}}">
                         <div class="mask"></div>
-                        <div class="social-links" data-wb-where='"{{data.prop.link.value}}">""'>
-                            <a href="{{data.prop.link.value}}"><i class="fa fa-link" aria-hidden="true"></i><div>подробно</div></a>
+                        <div class="social-links" wb-if='"{{data.link}}">""'>
+                            <a href="{{data.link}}"><i class="fa fa-link" aria-hidden="true"></i><div>подробно</div></a>
                         </div>
                         <div class="title">
                             <p><b>{{name}}</b></p>
