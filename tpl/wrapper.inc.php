@@ -41,8 +41,8 @@
 										<wb-data wb="table=pages&item=menu">
                     	<ul class="nav" wb-tree="field=prop">
                     			<li>
-														<a href="javascript:document.location.href = '/{{id}}'" wb-if='"{{_route.item}}" != "home"'>{{name}}</a>
-														<a href="#{{id}}" wb-if='"{{_route.item}}" == "home"'>{{name}}</a>
+														<a href="{{data.link}}" wb-if='"{{_route.item}}" != "home"'>{{name}}</a>
+														<a href="{{data.anchor}}" wb-if='"{{_route.item}}" == "home"'>{{name}}</a>
 													</li>
                     	</ul>
 										</wb-data>
