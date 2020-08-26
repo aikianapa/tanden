@@ -1032,6 +1032,7 @@ a:hover {
 #blog .blog-item {
     text-align: left;
     margin-bottom:80px;
+		width: 32%;
 }
 #blog .blog-item img {
     width: 100%
@@ -1051,7 +1052,7 @@ a:hover {
     line-height: 28px;
     margin-bottom: 20px;
     margin-top: 20px;
-		height:90px;
+		height:88px;
 		display: -webkit-box;
 		-webkit-line-clamp: 3;
 		-webkit-box-orient: vertical;
@@ -1658,4 +1659,23 @@ ymaps[id] {
 	    line-height: 25px;}
 .social > a:hover>i {
     transform: scale(1.2, 1.2);
+}
+
+
+.pagination > li > a, .pagination > li > span {
+		border: 1px solid #e74c3c;
+		color: #e74c3c;
+		padding-top: 10px;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+    z-index: 2;
+    color: #ffffff;
+    background-color: #e74c3c;
+    border-color: #e74c3c;
 }

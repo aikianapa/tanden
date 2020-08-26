@@ -25,6 +25,7 @@ foreach((array)$data->result as $item) {
     unset($item->created);
     unset($item->datesort);
     unset($item->form);
+		$images = [];
     if (isset($item->images)) {
         $images = wbObjToArray($item->images);
         $images = (array)wbItemToArray($images);
