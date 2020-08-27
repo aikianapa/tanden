@@ -1,4 +1,6 @@
 <div class="col-md-4 blog-item">
+		<wb-var link="/news/{{id}}/{{wbFurlGenerate({{header}})}}" wb-if='"{{type}}" == "news"' />
+		<wb-var link="/articles/{{id}}/{{wbFurlGenerate({{header}})}}" wb-if='"{{type}}" == "/article"' />
 		<a class="image-link" href="{{_var.link}}">
 				<img data-src="/thumbc/360x240/src/{{images.0.img}}" alt="{{header}}" class="img-responsive">
 		</a>

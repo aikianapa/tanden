@@ -14,7 +14,6 @@
 	<div class="container">
 		 <div class="row" id="blog">
 			 	<wb-foreach wb="table=news&sort=date:d&size=6" wb-filter="{'active':'on','type':'{{_var.type}}'}">
-					<wb-var link="{{_route.uri}}{{id}}/{{wbFurlGenerate({{header}})}}" />
 			 		<wb-include wb-tpl="news.item.inc.php" />
 				</wb-foreach>
 		 </div>
