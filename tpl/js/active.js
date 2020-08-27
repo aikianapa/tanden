@@ -23,7 +23,7 @@ var siteinit = function() {
 	}
 
 
-	if ($('#contact').length) {
+	if ($('#home').length) {
 	/* Single Page Navigation */
 	$(document).on('click', "#navigation ul li a, .smoth-menu, .slicknav_nav a", function(e) {
 		var div = $(this).attr("href");
