@@ -12,13 +12,13 @@ foreach((array)$data->result as $item) {
     if (isset($item->created)) {
         $item->_created = $item->created;
     } else {
-        $item->_created = $item->date;
+//        $item->_created = $item->date;
     }
 
     $item->_form = $item->form;
     $item->_table = $item->form;
     $item->_creator = '';
-    $item->type = 'news';
+    $item->type = 'pages';
 		$item->active = 'on';
     $item->_id = $item->id;
     unset($item->intext_position);
@@ -31,19 +31,23 @@ foreach((array)$data->result as $item) {
         $images = (array)wbItemToArray($images);
 
         foreach($images as &$image) {
-            if (isset($image['img'])) { $image['img'] = '/uploads/news/'.$item->id.'/'.$image['img'];
+            if (isset($image['img'])) { $image['img'] = '/uploads/pages/'.$item->id.'/'.$image['img'];
             }
         }
     }
 
 
     $item->images = $images;
+    $test = $app->itemRead('pages',$item->id);
+    if (!$test) {
+      $app->itemSave('pages', $app->objToArray($item), false); // преобразовать в массив!!!
+    }
 
-    $app->itemSave('news', $app->objToArray($item), false); // преобразовать в массив!!!
-    //    print_r($item);
+    //$app->itemSave('pages', $app->objToArray($item), false); // преобразовать в массив!!!
+        print_r($item->id);
             echo "\n==================\n";
     $i++;
-    //        if ($i==5) die;
+            //if ($i==5) die;
 }
-$app->tableFlush("news");
+$app->tableFlush("pages");
 ?>

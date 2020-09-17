@@ -4,25 +4,25 @@
 
 <wb-jq wb-html="main">
     <!--Banner Section-->
-				<div id="home" ></div>
-        <div id="banner" data-src="/thumb/1920x1080/src{{images.0.img}}">
-            <div id="slider-content">
-                <div class="owl-carousel owl-theme" id="content-slider"  wb-tree="field=prop&branch=slideshow&parent=false">
-                    <div class="sliding-content">
-                        <h1 class="banner-heading animated fadeInUp">
-                            <span class="first">АЙКИДО</span><span>АЙКИКАЙ</span>
-                        </h1>
-                        <h2 class="banner-content animated slideInRight">
-                            {{name}}
-                        </h2>
-                        <br>
-                        <h3 class="banner-btn animated bounceIn">
-                            {{data.text}}
-                        </h3>
-                    </div>
+    <div id="home"></div>
+    <div id="banner" data-src="/thumb/1920x1080/src{{images.0.img}}">
+        <div id="slider-content">
+            <div class="owl-carousel owl-theme" id="content-slider" wb-tree="field=prop&branch=slideshow&parent=false">
+                <div class="sliding-content">
+                    <h1 class="banner-heading animated fadeInUp">
+                        <span class="first">АЙКИДО</span><span>АЙКИКАЙ</span>
+                    </h1>
+                    <h2 class="banner-content animated slideInRight">
+                        {{name}}
+                    </h2>
+                    <br>
+                    <h3 class="banner-btn animated bounceIn">
+                        {{data.text}}
+                    </h3>
                 </div>
             </div>
         </div>
+    </div>
 
     <!--End Banner Section-->
 
@@ -49,49 +49,51 @@
 
 
 
-		    <!--Start Blog Section-->
-		    <div id="blog" class="section-padding">
-		        <div class="heading">
-		            <h1>Наши <span>Новости</span></h1>
-		        </div>
-		        <div class="container">
-		            <div class="row">
-									 <wb-foreach wb="{'table':'news','limit':'3','sort':'date:d'}" wb-filter="{'active':'on','type':'news'}">
-				                <wb-include wb-tpl="news.item.inc.php" />
-										</wb-foreach>
-		            </div>
-		            <div class="clear"></div>
-		            <a href="/news/" class="primary-btn">Все новости</a>
-		        </div>
-		    </div>
-		    <!--End Blog Section-->
-
-    <!--Start Team Section-->
-    <div id="team" class="section-padding">
-				<wb-data wb="table=pages&item=team">
+    <!--Start Blog Section-->
+    <div id="blog" class="section-padding">
         <div class="heading">
-            <h1>{{header}}</h1>
+            <h1>Наши <span>Новости</span></h1>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-12 owl-carousel owl-theme" id="team-carousel">
-									<wb-foreach wb="from=prop.data">
-                    <div class="col-md-12 team-member" wb-if='"{{active}}"=="on"'>
-                        <img data-src="/thumbc/270x350/src/{{data.image.0.img}}" alt="{{name}}">
-                        <div class="mask"></div>
-                        <div class="social-links" wb-if='"{{data.link}}">""'>
-                            <a href="{{data.link}}"><i class="fa fa-link" aria-hidden="true"></i><div>подробно</div></a>
-                        </div>
-                        <div class="title">
-                            <p><b>{{name}}</b></p>
-                            {{data.text}}
-                        </div>
+                <wb-foreach wb="{'table':'news','limit':'3','sort':'date:d'}" wb-filter="{'active':'on','type':'news'}">
+                    <wb-include wb-tpl="news.item.inc.php" />
+                </wb-foreach>
+            </div>
+            <div class="clear"></div>
+            <a href="/news/" class="primary-btn">Все новости</a>
+        </div>
+    </div>
+    <!--End Blog Section-->
+
+    <!--Start Team Section-->
+    <div id="team" class="section-padding">
+        <wb-data wb="table=pages&item=team">
+            <div class="heading">
+                <h1>{{header}}</h1>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 owl-carousel owl-theme" id="team-carousel">
+                        <wb-foreach wb="from=prop.data">
+                            <div class="col-md-12 team-member" wb-if='"{{active}}"=="on"'>
+                                <img data-src="/thumbc/270x350/src/{{data.image.0.img}}" alt="{{name}}">
+                                <div class="mask"></div>
+                                <div class="social-links" wb-if='"{{data.link}}">""'>
+                                    <a href="{{data.link}}"><i class="fa fa-link" aria-hidden="true"></i>
+                                        <div>подробно</div>
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <p><b>{{name}}</b></p>
+                                    {{data.text}}
+                                </div>
+                            </div>
+                        </wb-foreach>
                     </div>
-									</wb-foreach>
                 </div>
             </div>
-        </div>
-				</div>
+    </div>
     </div>
     <!--End team Section-->
 
@@ -171,93 +173,97 @@
 
     <!--Start Testemonial Section-->
     <div id="testemonial" class="section-padding">
-				<wb-data wb="table=pages&item=testimonials">
-        <div class="heading heading-inverse">
-            <h1>Умные <span>слова</span></h1>
-        </div>
+        <wb-data wb="table=pages&item=testimonials">
+            <div class="heading heading-inverse">
+                <h1>Умные <span>слова</span></h1>
+            </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="owl-carousel owl-theme" id="client-carousel">
-                    <wb-foreach wb-from="prop.data">
-                    <div class="col-md-10 col-md-offset-1 single-item">
-                        <p>{{data.text}}</p>
-                        <div class="client">
-                            <img data-wb-size="120;120;src" data-src="/thumbc/120x120/src/{{data.images.0.img}}" alt="">
-                            <p>{{name}}</p>
-                        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="owl-carousel owl-theme" id="client-carousel">
+                        <wb-foreach wb-from="prop.data">
+                            <div class="col-md-10 col-md-offset-1 single-item">
+                                <p>{{data.text}}</p>
+                                <div class="client">
+                                    <img data-wb-size="120;120;src" data-src="/thumbc/120x120/src/{{data.images.0.img}}"
+                                        alt="">
+                                    <p>{{name}}</p>
+                                </div>
+                            </div>
+                        </wb-foreach>
                     </div>
-									</wb-foreach>
                 </div>
             </div>
-        </div>
-				</wb-data>
+        </wb-data>
     </div>
     <!--End Testemonial Section-->
 
 
-		    <!--Раздел со статьями-->
-		    <div id="service" class="section-padding">
-		        <div class="heading">
-		            <h1>Статьи</h1>
-		        </div>
-		        <div class="container">
+    <!--Раздел со статьями-->
+    <div id="service" class="section-padding">
+        <div class="heading">
+            <h1>Статьи</h1>
+        </div>
+        <div class="container">
 
-		            <div class="row">
-										<wb-foreach wb="{'table':'news','limit':'3','sort':'date:d'}" wb-filter="{'type':'article'}">
-										<wb-var link="/articles/{{id}}/{{wbFurlGenerate({{header}})}}" />
-		                <div class="col-md-4 col-sm-6">
-		                    <div class="serviceBox">
-		                        <div class="service-head">
-		                            <h3>0{{_ndx}}</h3>
-		                            <h4>{{header}}</h4>
-		                        </div>
-		                        <div class="service-content">
-		                            {{wbGetWords({{text}},20)}}
-		                        </div>
-		                        <div class="read">
-		                            <a href="{{_var.link}}" class="btn btn-default">читать</a>
-		                        </div>
-		                    </div>
-		                </div>
-										</wb-foreach>
-		            </div>
-		            <div class="clear mb-30"></div>
-		            <a href="/articles/" class="primary-btn">Все статьи</a>
-		        </div>
-		    </div>
-		    <!--End Service Section-->
+            <div class="row">
+                <wb-foreach wb="{'table':'news','limit':'3','sort':'date:d'}" wb-filter="{'type':'article'}">
+                    <wb-var link="/articles/{{id}}/{{wbFurlGenerate({{header}})}}" />
+                    <div class="col-md-4 col-sm-6">
+                        <div class="serviceBox">
+                            <div class="service-head">
+                                <h3>0{{_ndx}}</h3>
+                                <h4>{{header}}</h4>
+                            </div>
+                            <div class="service-content">
+                                {{wbGetWords({{text}},20)}}
+                            </div>
+                            <div class="read">
+                                <a href="{{_var.link}}" class="btn btn-default">читать</a>
+                            </div>
+                        </div>
+                    </div>
+                </wb-foreach>
+            </div>
+            <div class="clear mb-30"></div>
+            <a href="/articles/" class="primary-btn">Все статьи</a>
+        </div>
+    </div>
+    <!--End Service Section-->
 
     <!--Start Pricing Section -->
     <div id="pricing" class="section-padding">
-				<wb-data wb="table=pages&item=schedule">
-        <div class="heading">
-            <h1>{{header}} <span>занятий</span></h1>
-        </div>
-
-        <div class="container">
-            <div class="row">
-								<wb-foreach wb-from="prop.data">
-                <div class="col-md-6">
-                    <div class="pricing-box">
-                        <div class="pricing-head">
-                            <h1>{{name}}</h1>
-                            <h2>{{data.text}}</h2>
-                        </div>
-                        <div class="popular-tag" wb-if='"{{id}}"=="kids"'>от&nbsp;6&nbsp;лет</div>
-                        <div class="plan-details">
-                            <wb-foreach wb="from=data.prop">
-                            <br>
-                                <p><b>{{label}}</b> - <span>{{value}}</span></p>
-                            </wb-foreach>
-                            <a href="#contact" class="btn-order">Записаться</a>
-                        </div>
-                    </div>
-                </div>
-								</wb-foreach>
+        <wb-data wb="table=pages&item=schedule">
+            <div class="heading">
+                <h1>{{header}} <span>занятий</span></h1>
             </div>
-        </div>
-				</wb-data>
+
+            <div class="container">
+                <div class="row">
+                    <wb-foreach wb-from="prop.data">
+                        <div class="col-md-6">
+                            <div class="pricing-box">
+                                <div class="pricing-head">
+                                    <h1>{{name}}</h1>
+                                    <h2>{{data.text}}</h2>
+                                </div>
+                                <div class="popular-tag" wb-if='"{{id}}"=="kids"'>от&nbsp;6&nbsp;лет</div>
+                                <div class="plan-details">
+                                    <wb-foreach wb="from=data.prop">
+                                        <br>
+                                        <p><b>{{label}}</b> - <span>{{value}}</span></p>
+                                    </wb-foreach>
+                                    <a href="#contact" class="btn-order">Записаться</a>
+                                </div>
+                            </div>
+                        </div>
+                    </wb-foreach>
+                </div>
+                <div class="row">
+                    <p>{{text}}
+                </div>
+            </div>
+        </wb-data>
     </div>
     <!--End Pricing Section-->
 
@@ -298,7 +304,8 @@
                         </div>
 
                         <div class="col-md-12">
-                            <a style="cursor:pointer;" data-wb-ajax="/ajax/mail/" class="btn-order">Отправить сообщение</a>
+                            <a style="cursor:pointer;" data-wb-ajax="/ajax/mail/" class="btn-order">Отправить
+                                сообщение</a>
                         </div>
 
                     </form>
@@ -319,7 +326,8 @@
     <!--End Contact Section-->
 
     <!--Start Google Map-->
-		<!--wb-include wb-tpl="widget.map.inc.php" /-->
+    <!--wb-include wb-tpl="widget.map.inc.php" /-->
     <!--End Google Map-->
 </wb-jq>
+
 </html>
