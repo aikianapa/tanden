@@ -22,6 +22,13 @@ var siteinit = function() {
 		}, 1200);
 	}
 
+$(document).find('[data-slick]').each(function() {
+	if (this.done !== undefined) return;
+	this.done = true;
+	let options = JSON.parse($(this).attr('data-slick'));
+	$(this).slick();
+});
+
 
 	if ($('#home').length) {
 	/* Single Page Navigation */
@@ -252,10 +259,10 @@ var siteinit = function() {
 
 
 	/* Lightbox */
-	lightbox.option({
-		'resizeDuration': 200,
-		'wrapAround': true
-	})
+//	lightbox.option({
+//		'resizeDuration': 200,
+//		'wrapAround': true
+//	})
 
 	/* Preloader */
 //	$("#banner").YTPlayer();

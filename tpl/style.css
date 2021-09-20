@@ -1681,3 +1681,23 @@ ymaps[id] {
     background-color: #e74c3c;
     border-color: #e74c3c;
 }
+
+.slick-slide {
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.slick-next {
+    right:30px;
+    z-index:1;
+}
+
+.slick-prev {
+    left:10px;
+    z-index:1;
+}
+
+.slick-next:before, .slick-prev:before {
+    color: #151e27;
+    font-size: 40px;
+}

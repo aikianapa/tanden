@@ -94,28 +94,31 @@
 			wbapp.loadStyles([
 				"{{_var.base}}/bootstrap/bootstrap.css"
 				,"/engine/lib/fonts/font-awesome/css/font-awesome.min.css"
-				,"/engine/lib/fonts/materialicons/materialicons.css"
+//				,"/engine/lib/fonts/materialicons/materialicons.css"
 		    ,"https://fonts.googleapis.com/css?family=Lato:300,400,700"
 		    ,"{{_var.base}}/css/owl.carousel.css"
 		    ,"{{_var.base}}/css/owl.theme.default.min.css"
+			,"{{_var.base}}/js/slick/slick.min.css"
+			,"{{_var.base}}/js/slick/slick-theme.css"
 		    ,"{{_var.base}}/css/circle.css"
 		    ,"{{_var.base}}/css/lightbox.min.css"
 		    ,"{{_var.base}}/css/slicknav.css"
 		    ,"{{_var.base}}/css/animate.css"
 		    ,"{{_var.base}}/style.css"
 		    ,"{{_var.base}}/responsive.css"
-				,"{{_var.base}}/js/YTPlayer/css/jquery.mb.YTPlayer.min.css"
+			//,"{{_var.base}}/js/YTPlayer/css/jquery.mb.YTPlayer.min.css"
 			]);
 
 			wbapp.loadScripts([
 				 "{{_var.base}}/bootstrap/bootstrap.min.js"
 				,"{{_var.base}}/js/owl.carousel.min.js"
+				,"{{_var.base}}/js/slick/slick.min.js"
 				,"{{_var.base}}/js/jquery.easing.1.3.js"
 				,"{{_var.base}}/js/jquery.waypoints.min.js"
 				,"{{_var.base}}/js/jquery.counterup.min.js"
-				,"{{_var.base}}/js/lightbox.min.js"
+				,"{{_var.base}}/js/fslightbox.js"
 				,"{{_var.base}}/js/jquery.slicknav.min.js"
-				,"{{_var.base}}/js/YTPlayer/jquery.mb.YTPlayer.min.js"
+			//	,"{{_var.base}}/js/YTPlayer/jquery.mb.YTPlayer.min.js"
 				,"{{_var.base}}/js/active.js"
 			],'siteready',function(){
 					siteinit();
