@@ -18,7 +18,7 @@
 						<div data-slick='{"lazyLoad": "ondemand","slidesToShow": 1, "slidesToScroll": 1}'>
 							<wb-foreach wb-from="images">
 							<a data-fslightbox="images" href="{{img}}">
-							 <img src="/thumbc/750x500/src/{{img}}" alt="{{header}}" class="img-responsive">
+							 <img data-lazy="/thumbc/750x500/src/{{img}}" alt="{{header}}" class="img-responsive">
 							</a>
 							</wb-foreach>
 							</div>
