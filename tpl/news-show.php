@@ -15,7 +15,7 @@
 		 <div class="row">
 				<section class="col-md-8" id="content">
 						<div class="blog-item">
-						<div data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+						<div data-slick='{"lazyLoad": "ondemand","slidesToShow": 1, "slidesToScroll": 1}'>
 							<wb-foreach wb-from="images">
 							<a data-fslightbox="images" href="{{img}}">
 							 <img src="/thumbc/750x500/src/{{img}}" alt="{{header}}" class="img-responsive">
